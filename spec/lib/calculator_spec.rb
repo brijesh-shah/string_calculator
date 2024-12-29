@@ -13,5 +13,11 @@ RSpec.describe Calculator do
       expect(Calculator.add("1,5")).to eq(6)
       expect(Calculator.add("1,2,3")).to eq(6)
     end
+
+    it 'supports large number' do
+      num1 = 1000022220221113334
+      num2 = 100002222022111
+      expect(Calculator.add("#{num1},#{num2}")).to eq(num1+num2)
+    end
   end
 end
