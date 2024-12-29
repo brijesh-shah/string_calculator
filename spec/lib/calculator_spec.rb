@@ -19,5 +19,10 @@ RSpec.describe Calculator do
       num2 = 100002222022111
       expect(Calculator.add("#{num1},#{num2}")).to eq(num1+num2)
     end
+
+    it 'handles newlines as delimiters' do
+      expect(Calculator.add("1\n2,3")).to eq(6)
+      expect(Calculator.add("1\n2\n3")).to eq(6)
+    end
   end
 end

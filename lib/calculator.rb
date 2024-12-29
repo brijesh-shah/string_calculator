@@ -11,7 +11,7 @@ class Calculator
   private
 
   def self.get_delimiter(numbers)
-    delimiter = /,/
+    delimiter = /,|\n/
 
     if numbers.start_with?("//")
       delimiter_info, _numbers = numbers.split("\n", 2)
