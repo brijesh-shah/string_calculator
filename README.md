@@ -11,7 +11,7 @@
 
 2. Allow the add method to handle any amount of numbers.
 ```
-Calculator.add("#{1000022220221113334},#{100002222022111}") -> 1000122222443135445
+Calculator.add("1000022220221113334,100002222022111") -> 1000122222443135445
 ```
 
 3. Allow the add method to handle new lines between numbers (instead of commas)
